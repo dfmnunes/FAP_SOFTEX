@@ -1,0 +1,29 @@
+Algoritmo " Media "
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Descrição   : Desenvolver um programa de aprovação por média de notas e presença
+// Autor(a)    : Deyvson F.M. Nunes
+// Data atual  : 31/07/2022
+Var
+
+Aluno: Caractere
+N1, N2: REAL
+FALTAS: INTEIRO
+Inicio
+      Escreva("Nome do Aluno: ")
+      Leia (Aluno)
+      Escreva("Nota 1 ")
+      Leia (N1)
+      Escreva("Nota 2 ")
+      Leia (N2)
+      Escreva ("Quantas faltas?")
+      Leia(FALTAS)
+           Se ((N1+N2)/ 2>= 7)E (FALTAS <=3) entao
+           Escreva ("Aprovado")
+           senao
+           Escreva("'Reprovado'")
+
+           fimse
+
+
+
+Fimalgoritmo
