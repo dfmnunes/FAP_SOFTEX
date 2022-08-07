@@ -1,7 +1,21 @@
-print ('Iniciando contagem regressiva . . .')
+print ("=== DESCUBRA A SUA CATEGORIA DE CNH ===")
 
-from time import sleep 
-for cont in range(10, -1, -1,):
-    print (cont)
-    sleep(1.0)
-print ('BUUUUM !!!')
+rodas = int(input("Quantas rodas tem o veículo? "))
+peso = float(input("Quantos quilogramas tem o veículo? "))
+pessoas = int(input("Quantas pessoas cabem no veículo? "))
+cnh = "Categoria da Habilitação"
+
+if (rodas < 4):
+    cnh = "A"
+elif (qnt_rodas == 4) and (qnt_pessoas <= 8) and (peso <= 3500):
+    cnh = "B"
+elif (qnt_rodas >= 4) and (peso > 3500) and (peso < 6000):
+    cnh = "C"
+elif (qnt_rodas >= 4) and (qnt_pessoas > 8):
+    cnh = "D"
+else:
+    cnh: "E"
+
+print("A categoria da Habilitação é " + cnh)
+
+
