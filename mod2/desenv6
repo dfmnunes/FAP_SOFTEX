@@ -1,0 +1,16 @@
+nome = input("Digite o nome: ")
+
+while True:
+    try:
+        anoNascimento = int(input("Digite o  ano do nascimento, entre 1922 e 2021: "))
+
+        if anoNascimento >= 1922 and anoNascimento<=2021:
+            print("A idade de", nome, "é", str(2022 - anoNascimento))
+            break
+
+        else:
+            raise Exception("O ano digitado está fora do range solicitado.")
+
+    except Exception as err:
+        print("Ocorreu um erro.")
+        print(err)
